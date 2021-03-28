@@ -1,10 +1,11 @@
 export default async (app) => {
-  app.message(/^(hi|hola|hey|bot).*/, async ({ context, say }) => {
-    const greeting = context.matches[0];
-    if (greeting === 'bot') {
-      await say(`hi <@${message.user}>, how are you?`);
-    } else {
-      await say(`${greeting} <@${message.user}>, how are you?`);
-    }
+  app.message(':wave:', async ({ message, say }) => {
+    await say(`Greetings, <@${message.user}>, how was your day?`);
+  });
+  app.message('hello', async ({ message, say }) => {
+    await say(`Greetings, <@${message.user}>, how was your day?`);
+  });
+  app.message('bot', async ({ message, say }) => {
+    await say(`Hi, <@${message.user}>, what do you need today`);
   });
 };
