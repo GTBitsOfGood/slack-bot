@@ -10,6 +10,7 @@ let msg_opener = `Extra extra! Read all about it! Here are the most recent notes
 let msg_tldr = `TLDR: ` + tldr;
 let msg_events = `Events: ` + events;
 let title, date, tldr, events;
+//TODO fix fetch - see bug.txt
 fetch("./data/meeting.json")
   .then(function(resp) {
     return resp.json();

@@ -1,0 +1,30 @@
+Successfully compiled 13 files with Babel (1014ms).
+  bot Boot sequence initiated... +0ms
+  db Connecting to database... +0ms
+  db Database connected. +140ms
+  plugins Loading plugins... +0ms
+  plugins 5 plugins detected. +25ms
+  plugins → "Carlo" v0.0.1 loaded. +3ms
+  plugins → "carsen" v0.0.2 loaded. +0ms
+  plugins → "Donut Bot" v0.0.1 loaded. +0ms
+  plugins → "Helpful Turtle Bot" v0.0.1 loaded. +1ms
+  plugins → "meetingminutes" v0.0.1 loaded. +0ms
+  plugins Plugins loaded! +0ms
+  bot 🤖 Boot sequence complete! +179ms
+/Users/carsenmiller/Documents/2021_Spring/slack-bot/node_modules/node-fetch/lib/index.js:1257
+                throw new TypeError('Only absolute URLs are supported');
+                      ^
+
+TypeError: Only absolute URLs are supported TODO fix this
+    at getNodeRequestOptions (/Users/carsenmiller/Documents/2021_Spring/slack-bot/node_modules/node-fetch/lib/index.js:1257:9)
+    at /Users/carsenmiller/Documents/2021_Spring/slack-bot/node_modules/node-fetch/lib/index.js:1322:19
+    at new Promise (<anonymous>)
+    at fetch (/Users/carsenmiller/Documents/2021_Spring/slack-bot/node_modules/node-fetch/lib/index.js:1319:9)
+    at Object.<anonymous> (/Users/carsenmiller/Documents/2021_Spring/slack-bot/lib/plugins/meetingminutes/plugin.js:44:1)
+    at Module._compile (node:internal/modules/cjs/loader:1092:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1121:10)
+    at Module.load (node:internal/modules/cjs/loader:972:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:996:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at /Users/carsenmiller/Documents/2021_Spring/slack-bot/lib/util/plugin.js:61:111
